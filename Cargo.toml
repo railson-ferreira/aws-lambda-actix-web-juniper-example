@@ -1,0 +1,16 @@
+[package]
+name = "lambda-actix-juniper"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "bootstrap"
+path = "src/main.rs"
+
+[dependencies]
+serde = "1.0.188"
+actix-web = "4.4.0"
+lambda-web = { version = "0.2.0", features=["actix4"] }
+tracing = { version = "0.1", features = ["log"] }
+tracing-subscriber = { version = "0.3", default-features = false, features = ["fmt"] }
+
